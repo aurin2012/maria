@@ -13,3 +13,7 @@ body{font-size:18px}header nav,.small-link{font-size:17px}.simple-hero{max-width
 @media(max-width:760px){.services .price-layout{gap:35px}}
 
 .simple-hero>img{border-radius:220px 220px 4px 4px}@media(max-width:760px){.simple-hero>img{border-radius:180px 180px 4px 4px}}
+
+/* Centered photo carousel */
+.gallery{display:flex;gap:24px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding:14px 15% 20px;overscroll-behavior-x:contain;align-items:flex-start}
+.gallery::-webkit-scrollbar{display:none}.gallery .work{flex:0 0 100%;scroll-snap-align:center;transform:scale(.94);opacity:.58;transition:transform .3s,opacity .3s}.gallery .work.current{transform:scale(1);opacity:1}.gallery .work[hidden]{display:none}.gallery .photo{aspect-ratio:1.25}.carousel-controls{display:flex;align-items:center;justify-content:center;gap:22px;margin:16px 0 0}.carousel-controls button{width:48px;height:48px;background:transparent;border:1px solid var(--line);border-radius:50%;font-size:24px}.carousel-controls button:disabled{opacity:.3;cursor:default}.carousel-count{font-size:16px;min-width:50px;text-align:center}@media(max-width:760px){.gallery{padding:8px 7% 15px;gap:12px}.gallery .work{flex-basis:100%}.gallery .caption h3{font-size:18px}.carousel-controls{margin-top:8px}}@media(prefers-reduced-motion:reduce){.gallery .work{transition:none}.gallery{scroll-behavior:auto}}
